@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3">
+	
+	
+	<test name="Test1">
+		<classes>
+			<class name="TestComponent.DashboardTest">
+				<methods>
+					<include name="PFdashscreen">
+						<parameter name="testcasename"
+							value="Verify Dashboard Element" />
+						<parameter name="browsername" value="chrome" />
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	
+	
+	
+</suite> <!-- Suite -->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+		<classes>
+			<class name="test.LoginTest">
+				<methods>
+					<include name="screen1">
+					<parameter name = "testcasename" value="Enter Valid userid and pwd"/> 
+					<parameter name = "browsername" value="chrome"/> 
+					</include>
+					<include name="screen2">
+					<parameter name = "testcasename" value="Enter invalid userid and Valid pwd"/> 
+					<parameter name = "browsername" value="chrome"/> 
+					</include>
+					<include name="screen3">
+					<parameter name = "testcasename" value="Enter valid userid and invalid pwd"/> 
+					<parameter name = "browsername" value="chrome"/> 
+					</include>
+					<include name="screen4">
+					<parameter name = "testcasename" value="Enter invalid userid and inalid pwd"/> 
+					<parameter name = "browsername" value="chrome"/> 
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="TestComponent.DashboardTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="dashscreen">
+            <parameter name="testcasename" value="Verify Dashboard Element"/>
+            <parameter name="browsername" value="chrome"/>
+          </include> <!-- dashscreen -->
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- TestComponent.DashboardTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
